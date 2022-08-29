@@ -1,6 +1,15 @@
 *{
     box-sizing: border-box;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.site {
+    background-color: #f3f3f3;
+    position: relative;
+}
+
 .top{
     width: 100%;
     height: 80px;
@@ -20,46 +29,56 @@
 .people{
     width: 45px;
     height: 45px;
-
+}
+.containerMessage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height:500px;
+}
+.messagecontent{
+    width: 100%;
+    border-radius: 2px;
+    padding:10px 10px;
+    flex-wrap: wrap;
 }
 .status{
-    width: 100%;
-    height: 40px;
     background: #DCDCDC;
-    border-radius: 2px;
 }
-.normais{
-    width: 100%;
-    height: 40px;
+.message{
     background: #FFFFFF;
-    border-radius: 2px;
 }
-.reservadas{
-    width: 100%;
-    height: 63px;
+.private-message{
     background: #FFDEDE;
-    border-radius: 2px;
 }
 .bottom{
     width: 100%;
     height: 80px;
     background: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
-}
-input placeholder{
-    width: 145px;
-    height: 30px;
-    left: 17px;
-    top: 612px;
-
-    font-family: 'Roboto';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    padding:0px 20px;
+}
+.bottom input{
+    outline: none;
+    border: none;
+    width: 250px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
 
-    color: #000000;
-
+.bottom input::placeholder{
+    color: black;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
 }
