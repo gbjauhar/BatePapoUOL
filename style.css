@@ -6,7 +6,7 @@ body {
 }
 
 .site {
-    background-color: #f3f3f3;
+    background-color: #e5e5e5;
     overflow:scroll;
 }
 
@@ -36,12 +36,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding-top:10px;
 }
 .messagecontent{
     width: 100%;
     border-radius: 2px;
     padding:10px 10px;
     word-break: break-word;
+    margin:4px;
 }
 .status{
     background: #DCDCDC;
